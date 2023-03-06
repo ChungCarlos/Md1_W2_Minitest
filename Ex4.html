@@ -7,45 +7,48 @@
 <body>
 <script>
     // Nhập độ dài của mảng:
-    function EnterLength(){
-      let n = +prompt("Enter your length of the array:");
-      let array = [];
-
-      // Lặp nhập giá trị dãy array tương ứng độ dài đã nhập:
-      for (let  i = 0; i < n; i++) {
-        let num = parseInt(prompt("Enter value of the array:"));
-        array.push(num);
-      }
-      console.log(array);
-    }
-    EnterLength();
+    // function EnterLength(){
+    //   let n = +prompt("Enter your length of the array:");
+    //   let array = [];
+    //
+    //   // Lặp nhập giá trị dãy array tương ứng độ dài đã nhập:
+    //   for (let  i = 0; i < n; i++) {
+    //     let num = parseInt(prompt("Enter value of the array:"));
+    //     array.push(num);
+    //   }
+    //   console.log(array);
+    // }
+    // EnterLength();
 
     // Tinh tong so chan trong mang
-    let arr = [1, 6, 8, 4, 7, 9];
-    let sum = 0;
+    // let arr = [1, 6, 8, 4, 7, 9];
+    // let sum = 0;
+    //
+    // function evennumber() {
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if (arr[i] % 2 === 0)
+    //             sum = sum + arr[i];
+    //     }
+    //     document.write(sum);
+    // }
+    //
+    // evennumber();
 
-    function evennumber() {
-        for (let i = 0; i < arr.length; i++) {
-            if (arr[i] % 2 === 0)
-                sum = sum + arr[i];
-        }
-        document.write(sum);
-    }
 
-    evennumber();
-
-
-    let arr = [12, 2, 56, 7, 9, 15, 18];
+    let arr = [1, 2, 3, 4, 5, 6, 7];
     let count = 0;
     let sum = 0;
     for (let i = 0; i < arr.length; i++) {
         for (let j = 1; j <= arr[i]; j++) {
-          if(arr[i]%j == 0){
-              count++
-          }if (count == 2){
-              sum += arr[i]
+            if (arr[i] % j == 0) {
+                count++
             }
+
         }
+        if (count == 2) {
+            sum += arr[i]
+        }
+        count = 0;
     }
     document.write(sum);
 </script>
