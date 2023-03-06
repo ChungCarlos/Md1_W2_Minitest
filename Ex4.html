@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chức năng trong mảng</title>
+</head>
+<body>
+<script>
+    // Nhập độ dài của mảng:
+    // function EnterLength(){
+    //   let n = +prompt("Enter your length of the array:");
+    //   let array = [];
+    //
+    //   // Lặp nhập giá trị dãy array tương ứng độ dài đã nhập:
+    //   for (let  i = 0; i < n; i++) {
+    //     let num = parseInt(prompt("Enter value of the array:"));
+    //     array.push(num);
+    //   }
+    //   console.log(array);
+    // }
+    // EnterLength();
+
+    // Tính
+    // tổng
+    // số
+    // chẵn
+    // trong
+    // mảng:
+    // let arr = [1, 6, 8, 4, 7, 9];
+    // let sum = 0;
+
+    // function evennumber() {
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if (arr[i] % 2 === 0)
+    //             sum = sum + arr[i];
+    //     }
+    //     document.write(sum);
+    // }
+    //
+    // evennumber();
+    var arr = [12, 2, 56, 7, 9, 15, 18];
+    var count = 0;
+    var sum = 0;
+    for ( i = 0; i < arr.length; i++) {
+        for (j = 1; j <= arr[i]; j++) {
+          if(arr[i]%j == 0){
+              count++
+          }if (count == 2){
+              sum += arr[i]
+            }
+        }
+    }
+    document.write(sum);
+</script>
+</body>
+</html>

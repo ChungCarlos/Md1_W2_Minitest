@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Factorial</title>
+</head>
+<body>
+<script>
+    // Công thức: n! = n*(n-1)! Đệ quy
+    let x = +prompt("Enter the number to calculate the factorial:")
+    function factorial(x)
+    {
+        if (x === 0)
+        {
+            return 1;
+        }
+        return x * factorial(x-1);
+    }
+    document.write(factorial(x));
+</script>
+</body>
+</html>
